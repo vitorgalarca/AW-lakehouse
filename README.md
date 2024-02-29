@@ -1,102 +1,52 @@
-Building a Real-Time Data Engineering Project with Azure
+# Adventure Works Cycles | Lakehouse | End to End Azure Data Engineering Project
 
+This an end-to-end data engineering project on the Azure cloud. Where I did data ingestion from a Azure SQL Database to Azure Data Lake using Data Factory to transformation using Databricks and Spark, loading to Synapse, and reporting using PowerBI. Also, I used Azure Entra ID (Active Directory) and Azure Key Vault for the data monitoring and governance purpose.
 
-Overall Goal: Learn how to use various Azure resources to build a complete end-to-end data engineering project for migrating and analyzing on-premise data.
+# Architecture
 
- 
-Target Audience: Beginner to intermediate data engineers, data analysts interested in cloud-based data projects.
-
- 
-Prerequisites: Basic understanding of data engineering concepts, optional familiarity with Azure tools.
+![arquitetura](https://github.com/vitorgalarca/AW-lakehouse/assets/151578825/0b970465-1927-45df-83a4-335b8c05e3da)
 
  
-Lesson Structure:
+# Tools and Architecture
 
- 
-Part 1: Introduction
-
- 
-Welcome and project overview
-
-Use case: Migrating on-premise SQL Server data to cloud and building analytics reports
-
-Importance of the project for resume and interviews
-
- 
-Part 2: Tools and Architecture
-
- 
 List and explanation of Azure resources used:
 
-Azure Data Factory (ADF)
-
-Azure Synapse Analytics
-
-Azure Databricks
-
-Azure Data Lake Gen 2
-
-Azure Active Directory
-
-Azure Key Vault
-
-Power BI
+- Azure Data Factory (ADF)
+- Azure Synapse Analytics
+- Azure Databricks
+- Azure Data Lake Gen 2
+- Azure Active Directory
+- Azure Key Vault
+- Power BI
 
 Introduction to "Lakehouse architecture" with bronze, silver, and gold data layers
 
+# 🎯 Project Goals
 
-Part 3: Data Ingestion
+- Ingest tables into the Azure Data Lake.
+- Apply data cleaning and transformation using Azure Databricks.
+- Utilize Azure Synapse Analytics for loading clean data.
+- Create interactive data visualizations and reports with Microsoft Power BI.
+- Implement Azure Active Directory (AAD) and Azure Key Vault for monitoring and governance.
 
- 
-Using ADF to connect to on-premise SQL Server and copy data tables
+# Data Ingestion
 
-Storing data in Azure Data Lake Gen 2
-
- 
-Part 4: Data Transformation
-
- 
-Azure Databricks for data transformation tasks
-
-Bronze layer: Raw data copy
-
-Silver layer: Basic transformations (data types, etc.)
-
-Gold layer: Final curated data
+Using ADF to connect to Azure SQL Database and copy data tables
+- Storing data in Azure Data Lake Gen 2
 
  
-Part 5: Data Loading and Reporting
+# Data Transformation
+ 
+## Azure Databricks for data transformation tasks
+
+- Bronze layer: Raw data copy
+- Silver layer: Basic transformations (data types, etc.)
+- Gold layer: Final curated data
 
  
-Loading gold layer data into Azure Synapse Analytics (similar to on-premise structure)
+# Data Loading and Reporting
 
-Using Power BI to create reports and visualizations on Synapse Analytics data
+- Loading gold layer data into Azure Synapse Analytics
+- Using Power BI to create reports and visualizations on Synapse Analytics data
 
- 
-Part 6: Automation and Testing
-
-Setting up pipelines to automate data flow and updates
-
-End-to-end pipeline testing
-
-Additional Notes:
-
- 
-The instructor mentions separate playlists for specific tools like ADF, which viewers can refer to for deeper understanding.
-
-Each part of the project will be covered in detail in separate videos.
-
-
-
-Benefits of Watching:
-
-Gain practical experience building a real-world data engineering project with Azure.
-
-Learn different Azure tools and their roles in data pipelines.
-
-Understand the concept of Lakehouse architecture for data management.
-
-Improve resume and interview skills for data engineering roles.
-
- 
-I hope this summary provides a clear and structured roadmap for the video lesson!
+# Dashboard
